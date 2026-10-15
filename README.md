@@ -52,6 +52,4 @@ isempty(check_rule_coverage(@__MODULE__))   # true: every rule has a test
 - Tests: `make test` runs the suite as CI does; `make test test_args="name:coverage"` selects
   items by tag, by name or by file. `make help` lists the other targets: `docs`, `docs-serve`,
   `format`, `check-format`, `test-fast`.
-- Depends on MessagePassingRulesBase, BayesBase, Distributions, ForwardDiff and HCubature, and
-  on no engine. A test dependency: nothing at run time needs it. Julia 1.10 or later. MIT
-  licence.
+- A test dependency: nothing at run time needs it. Julia 1.10 or later. MIT licence.
