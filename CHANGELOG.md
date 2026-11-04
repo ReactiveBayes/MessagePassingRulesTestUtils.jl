@@ -6,6 +6,9 @@ All notable changes to MessagePassingRulesTestUtils.jl are documented here. The 
 
 ## [Unreleased]
 
+### Fixed
+- Make the `tables:failures` test independent of how Distributions prints distributions, which changed in Distributions v0.25.133.
+
 ## [1.0.0] - 2026-10-06
 
 The first release: the test tooling of the ReactiveMP ecosystem's rule packages (tables, verification

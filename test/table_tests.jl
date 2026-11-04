@@ -58,7 +58,7 @@ end
         @test_message_update_rule(node = T.Gauss, target = :out, check_type_promotion = false, cases = [(m = (μ = PointMass(1.0), σ = PointMass(2.0)),) => Normal(1.0, 3.0)])
     end
     @test length(Recording.failures(wrong_value)) == 1
-    @test contains(Recording.failure_text(wrong_value), "expected Distributions.Normal")
+    @test contains(Recording.failure_text(wrong_value), "expected $(repr(Normal(1.0, 3.0)))::$(typeof(Normal(1.0, 3.0)))")
     # The failure points at the table's line in this file, not inside the package.
     @test contains(Recording.failure_text(wrong_value), "table_tests.jl")
 
